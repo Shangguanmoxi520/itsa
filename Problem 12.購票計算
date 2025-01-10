@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    int money;
+    scanf("%d", &money);
+    int remain;
+    printf("NT10=%d\n", money/10);
+    remain = money%10;
+    printf("NT5=%d\n", remain/5);
+    remain = money%5;
+    printf("NT1=%d\n", remain);
+	return 0;
+}
