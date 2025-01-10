@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    float w, h;
+    scanf("%f %f", &w, &h);
+    h /= 100;
+    printf("%.2f\n", w/h/h);
+	return 0;
+}
