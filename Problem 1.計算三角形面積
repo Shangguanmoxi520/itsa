@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    double a, height;
+    scanf("%lf %lf", &a, &height);
+    printf("Triangle area:%.1lf\n", a*height/2);
+	return 0;
+}
