@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    float m;
+    scanf("%f", &m);
+    printf("km=%.1f\n", m*1.6);
+	return 0;
+}
