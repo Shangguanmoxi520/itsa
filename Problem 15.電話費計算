@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define a 0.9
+#define b 0.81
+#define c 0.711
+
+int main(int argc, char *argv[]) {
+    float time;
+    scanf("%f", &time);
+    if(time <= 800)
+        printf("%.1f\n", time*a);
+    else if(time < 1500)
+        printf("%.1f\n", time*b);
+    else
+        printf("%.1f\n", time*c);
+	return 0;
+}
