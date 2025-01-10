@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    int a, b, h, m,sum = 0;
+    scanf("%d %d", &h, &m);
+    a = 60*h + m;
+    scanf("%d %d", &h, &m);
+    b = 60*h + m;
+    b -= a;
+    if(b<=120){
+        printf("%d\n", b/30*30);
+        return 0;
+    }
+    b-=120;
+    sum += 120;
+    if(b<120){
+        printf("%d\n", sum + b/30*40);
+        return 0;
+    }
+    b-=120;
+    sum += 160;
+    printf("%d\n", sum + b/30*60);
+
+	return 0;
+}
