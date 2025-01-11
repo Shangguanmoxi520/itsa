@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define sma 1.33
+#define big 1.66
+
+int main(int argc, char *argv[]) {
+    float a, b,sum = 0;
+    scanf("%f %f", &a, &b);
+    if(a<=60){
+        printf("%.1f\n", a*b);
+        return 0;
+    }
+    a-=60;
+    sum += 60*b;
+    if(a<=60){
+        printf("%.1fn", sum + a*b*sma);
+        return 0;
+    }
+    a-=60;
+    sum += 60*b*sma;
+    printf("%.1f\n", sum + a*b*big);
+	return 0;
+}
