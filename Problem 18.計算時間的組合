@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define day 86400
+#define hour 3600
+#define minute 60
+
+int main(int argc, char *argv[]) {
+    int input;
+    scanf("%d", &input);
+    printf("%d days\n", input/day);
+    input = input % day;
+    printf("%d hours\n", input/hour);
+    input = input % hour;
+    printf("%d minutes\n", input/minute);
+    input = input % minute;
+    printf("%d seconds\n", input);
+	return 0;
+}
