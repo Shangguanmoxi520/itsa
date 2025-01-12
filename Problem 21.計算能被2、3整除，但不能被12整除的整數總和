@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int squareSum(int n){
+    return n*(n+1)/2;
+}
+
+int main(int argc, char *argv[]) {
+    int n, sum = 0;
+    scanf("%d", &n);
+    sum += 6*squareSum(n/6);
+    sum -= 12*squareSum(n/12);
+    printf("%d\n", sum);
+	return 0;
+}
