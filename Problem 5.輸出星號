@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void convert(int n, int m[]){
+    m[0] = n/10000;
+    n -= m[0]*10000;
+    m[1] = n/1000;
+    n -= m[1]*1000;
+    m[2] = n/100;
+    n -= m[2]*100;
+    m[3] = n/10;
+    n -= m[3]*10;
+    m[4] = n;
+}
+
+int main(int argc, char *argv[]) {
+    int n, m[5];
+    scanf("%d", &n);
+    convert(n, m);
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < m[i]; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+	return 0;
+}
