@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(int argc, char *argv[]) {
+    int n;
+    scanf("%d", &n);
+    int m = (int)sqrt(n);
+    while(m>1){
+        if(n%m == 0){
+            printf("NO\n");
+            return 0;
+        }
+        m--;
+    }
+    printf("YES\n");
+	return 0;
+}
